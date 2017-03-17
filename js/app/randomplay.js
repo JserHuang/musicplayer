@@ -3,7 +3,7 @@ define(['jquery','app/setlyric'],function($,synLyric){
 		//获取电台
 		(function(){
 			$.ajax({
-				url: 'https://api.jirengu.com/fm/getChannels.php',
+				url: 'http://api.jirengu.com/fm/getChannels.php',
 				type: 'get',
 				dataType: 'json',
 				success: function(data){
