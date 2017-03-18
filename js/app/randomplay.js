@@ -33,7 +33,7 @@ define(['jquery','app/setlyric'],function($,synLyric){
 			var channel = channel || 'public_aaa_bbb';
 
 			$.ajax({
-				url: 'http://api.jirengu.com/fm/getSong.php',
+				url: 'https://api.jirengu.com/fm/getSong.php',
 				type: 'get',
 				data: {
 					channel: channel
