@@ -3,7 +3,11 @@ define(['jquery','app/setlyric'],function($,synLyric){
 		//获取电台
 		(function(){
 			$.ajax({
+<<<<<<< HEAD
 				url: 'https://route.showapi.com/213-4?showapi_appid=31967',
+=======
+				url: 'https://api.jirengu.com/fm/getChannels.php',
+>>>>>>> 91dce8eb9d1d3623d60dceed7d4cfeec541f2033
 				type: 'get',
 				dataType: 'json',
 				success: function(data){
@@ -33,7 +37,7 @@ define(['jquery','app/setlyric'],function($,synLyric){
 			var channel = channel || 'public_aaa_bbb';
 
 			$.ajax({
-				url: 'http://api.jirengu.com/fm/getSong.php',
+				url: 'https://api.jirengu.com/fm/getSong.php',
 				type: 'get',
 				data: {
 					channel: channel

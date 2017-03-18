@@ -17,7 +17,11 @@ define(['jquery','app/event','randomplay'],function($,eventCenter,getSongsFM){
 		//获取歌词
 		function getLyric(data){
 			$.ajax({
+<<<<<<< HEAD
 				url: 'https://route.showapi.com/213-4?showapi_appid=31967',
+=======
+				url: 'https://api.jirengu.com/fm/getLyric.php',
+>>>>>>> 91dce8eb9d1d3623d60dceed7d4cfeec541f2033
 				type: 'post',
 				dataType: 'json',
 				data: {
